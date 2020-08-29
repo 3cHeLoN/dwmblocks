@@ -1,7 +1,7 @@
 /* time interval in seconds to sleep before looking for updates in the main loop */
 #define SLEEPINTERVAL			1
 
-#define PATH(name)			"$HOME/.local/bin/blocks/"name
+#define PATH(name)			"/home/folkert/.local/bin/blocks/"name
 
 /* If interval of a block is set to 0, the block will only be updated once at startup.
  * If interval is set to a negative value, the block will never be updated in the main loop.
@@ -19,7 +19,7 @@ static Block blocks[] = {
 
 	{ PATH("moonphase"),      	NULL,		       			1800,		0},
 
-	{ PATH("regen.py"),      	PATH("radar"),		       	300,		3},
+//	{ PATH("regen.py"),      	PATH("radar"),		       	300,		3},
 
 	{ PATH("cpu"),        	NULL,		        			30,		0},
 
